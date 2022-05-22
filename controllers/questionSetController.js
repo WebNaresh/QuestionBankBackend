@@ -63,7 +63,7 @@ exports.findQuestionSet = catchAsyncErrors(async (req, res, next) => {
     const id = req.params.id;
     let questionSet = await QuestionSet.find({ _id: id });
     if (!questionSet) {
-        return next(new ErrorHandler("Question Set not found", 404));
+        return next(new ErrorHandler("Question Set sorry not found", 404));
     }
     res.status(201).json({
         questionSet,

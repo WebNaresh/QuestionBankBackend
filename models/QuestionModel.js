@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const questionSchema = new mongoose.Schema({
     question: {
         type: String,
-        required: [true, "Please Enter Question First"]
+        required: [true, "Please Enter Question First"],
+        unique: true
     },
     options: [
         {

@@ -7,7 +7,6 @@ app.use(cookieParser());
 app.use(cors({
     origin: "*",
 
-
 }));
 
 const errorMiddleware = require("./middleware/error");

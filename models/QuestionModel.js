@@ -4,7 +4,8 @@ const questionSchema = new mongoose.Schema({
     question: {
         type: String,
         required: [true, "Please Enter Question First"],
-        unique: true
+        unique: true,
+        default: Date.now
     },
     options: [
         {

@@ -3,6 +3,9 @@ const app = express();
 const cookieParser = require('cookie-parser');
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors({
+    origin: "http://localhost:5500"
+}));
 
 const errorMiddleware = require("./middleware/error");
 

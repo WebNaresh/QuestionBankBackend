@@ -1,7 +1,7 @@
 const ErrorHandler = require("../utils/errorhandler");
 const cathchAsyncError = require("./cathchAsyncError");
 const jwt = require('jsonwebtoken');
-const User = require("../models/UserModel");
+const { User } = require("../models/UserModel");
 
 
 exports.isAuthenticatedUser = cathchAsyncError(async (req, res, next) => {
